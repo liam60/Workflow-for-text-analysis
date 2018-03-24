@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Aug 24 10:04:42 NZST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015e-1120-482f-00000931b3a8 
+on database directory /Users/Chao/Dropbox/Projects/weta/weta/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@601621b7 
+Loaded from file:/Users/Chao/anaconda/lib/python3.6/site-packages/pyspark/jars/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_152-ea-b05
+user.dir=/Users/Chao/Dropbox/Projects/weta/weta
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.12.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

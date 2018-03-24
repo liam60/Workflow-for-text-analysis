@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="Data Reader" position="(-51.0, 126.0)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_reader.OWDataFrameReader" title="Data Reader" version="" />
+		<node id="1" name="IDF" position="(526.0, 114.0)" project_name="weta" qualified_name="weta.gui.widgets.feature.spark_idf.OWIDF" title="IDF" version="" />
+		<node id="2" name="NLTK Tokenizer" position="(136.0, 126.0)" project_name="weta" qualified_name="weta.gui.widgets.preprocess.spark_nltk_tokenizer.OWNLTKTokenizer" title="NLTK Tokenizer" version="" />
+		<node id="3" name="Stopwords Remover" position="(241.0, 124.0)" project_name="weta" qualified_name="weta.gui.widgets.preprocess.spark_stopwords_remover.OWStopWordsRemover" title="Stopwords Remover" version="" />
+		<node id="4" name="NGram" position="(342.0, 254.0)" project_name="weta" qualified_name="weta.gui.widgets.preprocess.spark_ngram.OWNGram" title="NGram" version="" />
+		<node id="5" name="IDF" position="(535.0, 259.0)" project_name="weta" qualified_name="weta.gui.widgets.feature.spark_idf.OWIDF" title="IDF (1)" version="" />
+		<node id="6" name="Data Viewer" position="(394.0, 370.0)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_viewer.OWDataFrameViewer" title="Data Viewer" version="" />
+		<node id="7" name="Hashing TF" position="(387.0, 116.0)" project_name="weta" qualified_name="weta.gui.widgets.feature.spark_hashing_tf.OWHashingTF" title="Hashing TF" version="" />
+		<node id="8" name="Hashing TF" position="(436.0, 258.0)" project_name="weta" qualified_name="weta.gui.widgets.feature.spark_hashing_tf.OWHashingTF" title="Hashing TF (1)" version="" />
+		<node id="9" name="PySpark Script" position="(625.0, 258.0)" project_name="weta" qualified_name="weta.gui.widgets.data.pyspark_script_console.OWPySparkScript" title="select features" version="" />
+		<node id="10" name="Column Joiner" position="(744.0, 187.0)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_joiner.OWDataFrameJoiner" title="Data Joiner" version="" />
+		<node id="11" name="Feature Extraction" position="(40.0, 126.0)" project_name="weta" qualified_name="weta.gui.widgets.nzpolice.nzpolice_preprocess.OWNZPolicePreprocess" title="Feature Extraction" version="" />
+		<node id="12" name="Linkage" position="(849.0, 195.0)" project_name="weta" qualified_name="weta.gui.widgets.nzpolice.nzpolice_link.OWNZPoliceLinkage" title="Linkage" version="" />
+		<node id="13" name="Logistic Regression" position="(288.0, 462.0)" project_name="weta" qualified_name="weta.gui.widgets.learn.spark_logistic_regression.OWLogisticRegression" title="Logistic Regression" version="" />
+		<node id="14" name="NaiveBayes" position="(293.0, 695.0)" project_name="weta" qualified_name="weta.gui.widgets.learn.spark_naive_bayes.OWNaiveBayes" title="NaiveBayes" version="" />
+		<node id="15" name="Row Splitter" position="(128.0, 570.0)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_splitter.OWDataFrameSplitter" title="Data Splitter (1)" version="" />
+		<node id="16" name="Model Transformation" position="(450.0, 640.0)" project_name="weta" qualified_name="weta.gui.widgets.learn.spark_model_transform.OWModelTransformation" title="Model Transformation" version="" />
+		<node id="17" name="Data Viewer" position="(575.0, 706.0)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_viewer.OWDataFrameViewer" title="Data Viewer (2)" version="" />
+		<node id="18" name="Model Transformation" position="(444.0, 502.0)" project_name="weta" qualified_name="weta.gui.widgets.learn.spark_model_transform.OWModelTransformation" title="Model Transformation (1)" version="" />
+		<node id="19" name="Data Viewer" position="(575.0, 417.0)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_viewer.OWDataFrameViewer" title="Data Viewer (3)" version="" />
+		<node id="20" name="Plotly" position="(726.0, 563.0)" project_name="weta" qualified_name="weta.gui.widgets.visualise.plotly_viewer.OWPlotlyViewer" title="ROC Curve" version="" />
+		<node id="21" name="Evaluation" position="(595.0, 563.0)" project_name="weta" qualified_name="weta.gui.widgets.nzpolice.nzpolice_evaluate.OWNZPoliceEvaluate" title="Evaluation" version="" />
+		<node id="22" name="Plotly" position="(874.0, 544.0)" project_name="weta" qualified_name="weta.gui.widgets.visualise.plotly_viewer.OWPlotlyViewer" title="Features Scatter Matrix" version="" />
+		<node id="23" name="PySpark Script" position="(834.0, 390.0)" project_name="weta" qualified_name="weta.gui.widgets.data.pyspark_script_console.OWPySparkScript" title="PySpark Script (2)" version="" />
+		<node id="24" name="PySpark Script" position="(492.0, 343.0)" project_name="weta" qualified_name="weta.gui.widgets.data.pyspark_script_console.OWPySparkScript" title="PySpark Script" version="" />
+		<node id="25" name="PySpark Script" position="(697.0, 415.0)" project_name="weta" qualified_name="weta.gui.widgets.data.pyspark_script_console.OWPySparkScript" title="PySpark Script (1)" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="DataFrame" sink_node_id="3" source_channel="DataFrame" source_node_id="2" />
+		<link enabled="true" id="1" sink_channel="DataFrame" sink_node_id="4" source_channel="DataFrame" source_node_id="3" />
+		<link enabled="true" id="2" sink_channel="DataFrame" sink_node_id="7" source_channel="DataFrame" source_node_id="3" />
+		<link enabled="true" id="3" sink_channel="DataFrame" sink_node_id="1" source_channel="DataFrame" source_node_id="7" />
+		<link enabled="true" id="4" sink_channel="DataFrame" sink_node_id="8" source_channel="DataFrame" source_node_id="4" />
+		<link enabled="true" id="5" sink_channel="DataFrame" sink_node_id="5" source_channel="DataFrame" source_node_id="8" />
+		<link enabled="true" id="6" sink_channel="df" sink_node_id="9" source_channel="DataFrame" source_node_id="5" />
+		<link enabled="true" id="7" sink_channel="DataFrame2" sink_node_id="10" source_channel="df" source_node_id="9" />
+		<link enabled="true" id="8" sink_channel="DataFrame" sink_node_id="11" source_channel="DataFrame" source_node_id="0" />
+		<link enabled="true" id="9" sink_channel="DataFrame" sink_node_id="2" source_channel="DataFrame" source_node_id="11" />
+		<link enabled="true" id="10" sink_channel="DataFrame" sink_node_id="12" source_channel="DataFrame" source_node_id="10" />
+		<link enabled="true" id="11" sink_channel="DataFrame" sink_node_id="6" source_channel="DataFrame" source_node_id="12" />
+		<link enabled="true" id="12" sink_channel="DataFrame" sink_node_id="14" source_channel="DataFrame1" source_node_id="15" />
+		<link enabled="true" id="13" sink_channel="DataFrame" sink_node_id="13" source_channel="DataFrame1" source_node_id="15" />
+		<link enabled="true" id="14" sink_channel="Model" sink_node_id="16" source_channel="Model" source_node_id="14" />
+		<link enabled="true" id="15" sink_channel="DataFrame" sink_node_id="16" source_channel="DataFrame2" source_node_id="15" />
+		<link enabled="true" id="16" sink_channel="DataFrame" sink_node_id="17" source_channel="DataFrame" source_node_id="16" />
+		<link enabled="true" id="17" sink_channel="Model" sink_node_id="18" source_channel="Model" source_node_id="13" />
+		<link enabled="true" id="18" sink_channel="DataFrame" sink_node_id="18" source_channel="DataFrame2" source_node_id="15" />
+		<link enabled="true" id="19" sink_channel="DataFrame" sink_node_id="19" source_channel="DataFrame" source_node_id="18" />
+		<link enabled="true" id="20" sink_channel="DataFrame" sink_node_id="15" source_channel="DataFrame" source_node_id="6" />
+		<link enabled="true" id="21" sink_channel="DataFrame1" sink_node_id="21" source_channel="DataFrame" source_node_id="18" />
+		<link enabled="true" id="22" sink_channel="Model1" sink_node_id="21" source_channel="Model" source_node_id="18" />
+		<link enabled="true" id="23" sink_channel="DataFrame2" sink_node_id="21" source_channel="DataFrame" source_node_id="16" />
+		<link enabled="true" id="24" sink_channel="Model2" sink_node_id="21" source_channel="Model" source_node_id="16" />
+		<link enabled="true" id="25" sink_channel="Figure" sink_node_id="20" source_channel="Figure" source_node_id="21" />
+		<link enabled="true" id="26" sink_channel="Figure" sink_node_id="22" source_channel="data" source_node_id="23" />
+		<link enabled="true" id="27" sink_channel="DataFrame1" sink_node_id="10" source_channel="DataFrame" source_node_id="1" />
+		<link enabled="true" id="28" sink_channel="df" sink_node_id="23" source_channel="RawDataFrame" source_node_id="12" />
+		<link enabled="true" id="29" sink_channel="df" sink_node_id="24" source_channel="DataFrame" source_node_id="18" />
+		<link enabled="true" id="30" sink_channel="df" sink_node_id="25" source_channel="DataFrame" source_node_id="19" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'file_path': '/Users/Chao/nzpolice/summer/police.newreports.tsv', 'format': 'tsv', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02t\x00\x00\x02\x08\x00\x00\x04\x0b\x00\x00\x02\xce\x00\x00\x02t\x00\x00\x02\x1e\x00\x00\x04\x0b\x00\x00\x02\xce\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="1">{'inputCol': 'cosineTF', 'minDocFreq': 0, 'outputCol': 'cosineTFIDF', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\xf2\x00\x00\x00u\x00\x00\x04\x99\x00\x00\x02\xab\x00\x00\x00\xf2\x00\x00\x00\x8b\x00\x00\x04\x99\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'inputCol': 'methodOfEntry', 'outputCol': 'methodOfEntry_tokens', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02b\x00\x00\x00\x94\x00\x00\x05\x0f\x00\x00\x02\xca\x00\x00\x02b\x00\x00\x00\xaa\x00\x00\x05\x0f\x00\x00\x02\xca\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="3">{'caseSensitive': False, 'inputCol': 'methodOfEntry_tokens', 'outputCol': 'methodOfEntry_cleaned_tokens', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x010\x00\x00\x00\xec\x00\x00\x03\xdd\x00\x00\x03"\x00\x00\x010\x00\x00\x01\x02\x00\x00\x03\xdd\x00\x00\x03"\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="4">{'inputCol': 'methodOfEntry_cleaned_tokens', 'n': 2, 'outputCol': 'twogram', 'savedWidgetGeometry': b"\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01z\x00\x00\x00\xcc\x00\x00\x04'\x00\x00\x03\x02\x00\x00\x01z\x00\x00\x00\xe2\x00\x00\x04'\x00\x00\x03\x02\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0", '__version__': 1}</properties>
+		<properties format="literal" node_id="5">{'inputCol': 'cosineTF2', 'minDocFreq': 0, 'outputCol': 'cosineTFIDF2', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00?\x00\x00\x00\xb5\x00\x00\x03\xe6\x00\x00\x02\xeb\x00\x00\x00?\x00\x00\x00\xcb\x00\x00\x03\xe6\x00\x00\x02\xeb\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="6">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\x14\x00\x00\x00\x17\x00\x00\x05\x8a\x00\x00\x03B\x00\x00\x00\x14\x00\x00\x00-\x00\x00\x05\x8a\x00\x00\x03B\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="7">{'binary': False, 'inputCol': 'methodOfEntry_cleaned_tokens', 'numFeatures': 262144, 'outputCol': 'cosineTF', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00y\x00\x00\x00u\x00\x00\x03&amp;\x00\x00\x02\xab\x00\x00\x00y\x00\x00\x00\x8b\x00\x00\x03&amp;\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="8">{'binary': False, 'inputCol': 'twogram', 'numFeatures': 262144, 'outputCol': 'cosineTF2', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01o\x00\x00\x00u\x00\x00\x04\x1c\x00\x00\x02\xab\x00\x00\x01o\x00\x00\x00\x8b\x00\x00\x04\x1c\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="pickle" node_id="9">gAN9cQAoWAcAAABfc2NyaXB0cQFYJQAAAGRmID0gZGYuc2VsZWN0KCdfaWQnLCAnY29zaW5lVEZJ
+REYyJylxAlgMAAAAYXV0b19leGVjdXRlcQOJWBIAAABjdXJyZW50U2NyaXB0SW5kZXhxBEsAWBEA
+AABsaWJyYXJ5TGlzdFNvdXJjZXEFXXEGY3dldGEuZ3VpLndpZGdldHMuZGF0YS5weXNwYXJrX3Nj
+cmlwdF9jb25zb2xlClNjcmlwdApxBymBcQh9cQkoWAQAAABuYW1lcQpYCgAAAE5ldyBzY3JpcHRx
+C1gGAAAAc2NyaXB0cQxYJQAAAGRmID0gZGYuc2VsZWN0KCdfaWQnLCAnY29zaW5lVEZJREYyJylx
+DVgFAAAAZmxhZ3NxDksAWAgAAABmaWxlbmFtZXEPTnViYVgTAAAAc2F2ZWRXaWRnZXRHZW9tZXRy
+eXEQQzIB2dDLAAIAAAAAAUAAAAAXAAAEXwAAAyUAAAFAAAAALQAABF8AAAMlAAAAAAAAAAAFoHER
+WA0AAABzcGxpdHRlclN0YXRlcRJYeQAAAGInXHgwMFx4MDBceDAwXHhmZlx4MDBceDAwXHgwMFx4
+MDFceDAwXHgwMFx4MDBceDAyXHgwMFx4MDBceDAxJVx4MDBceDAwXHgwMVNceDAxXHhmZlx4ZmZc
+eGZmXHhmZlx4MDFceDAwXHgwMFx4MDBceDAyXHgwMCdxE1gLAAAAX192ZXJzaW9uX19xFEsBdS4=
+</properties>
+		<properties format="literal" node_id="10">{'id': '_id', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\xb4\x00\x00\x00u\x00\x00\x04a\x00\x00\x02\xab\x00\x00\x01\xb4\x00\x00\x00\x8b\x00\x00\x04a\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="11">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02b\x00\x00\x00u\x00\x00\x03l\x00\x00\x02\xab\x00\x00\x02b\x00\x00\x00\x8b\x00\x00\x03l\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="12">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02b\x00\x00\x00u\x00\x00\x03s\x00\x00\x02\xab\x00\x00\x02b\x00\x00\x00\x8b\x00\x00\x03s\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', 'select_ratio': 1, '__version__': 1}</properties>
+		<properties format="literal" node_id="13">{'aggregationDepth': 2, 'elasticNetParam': 0.0, 'family': 'auto', 'featuresCol': 'feature_vec', 'fitIntercept': True, 'labelCol': 'class', 'maxIter': 100, 'regParam': 0.0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x04+\x00\x00\x02\xe4\x00\x00\x00\x00\x00\x00\x00-\x00\x00\x04+\x00\x00\x02\xe4\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', 'standardization': True, 'threshold': 0.5, 'tol': 1e-06, 'weightCol': 'weight', '__version__': 1}</properties>
+		<properties format="literal" node_id="14">{'featuresCol': 'feature_vec', 'labelCol': 'class', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01o\x00\x00\x00Y\x00\x00\x05"\x00\x00\x02\xc5\x00\x00\x01o\x00\x00\x00o\x00\x00\x05"\x00\x00\x02\xc5\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', 'smoothing': 1.0, 'weightCol': 'weight', '__version__': 1}</properties>
+		<properties format="literal" node_id="15">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02b\x00\x00\x00u\x00\x00\x03s\x00\x00\x02\xab\x00\x00\x02b\x00\x00\x00\x8b\x00\x00\x03s\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', 'test_weight': 0.2, 'train_weight': 0.8, '__version__': 1}</properties>
+		<properties format="literal" node_id="16">{'inputCol': 'feature_vec', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01o\x00\x00\x00u\x00\x00\x04\x1c\x00\x00\x02\xab\x00\x00\x01o\x00\x00\x00\x8b\x00\x00\x04\x1c\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="17">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\x14\x00\x00\x00\x17\x00\x00\x05\x8a\x00\x00\x03B\x00\x00\x00\x14\x00\x00\x00-\x00\x00\x05\x8a\x00\x00\x03B\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="18">{'inputCol': 'feature_vec', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01o\x00\x00\x00u\x00\x00\x04\x1c\x00\x00\x02\xab\x00\x00\x01o\x00\x00\x00\x8b\x00\x00\x04\x1c\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="19">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\x14\x00\x00\x00\x17\x00\x00\x05\x8a\x00\x00\x03B\x00\x00\x00\x14\x00\x00\x00-\x00\x00\x05\x8a\x00\x00\x03B\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="20">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\xb2\x00\x00\x00K\x00\x00\x04\xda\x00\x00\x02\xd5\x00\x00\x00\xb2\x00\x00\x00a\x00\x00\x04\xda\x00\x00\x02\xd5\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="21">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02b\x00\x00\x00u\x00\x00\x03)\x00\x00\x02\xab\x00\x00\x02b\x00\x00\x00\x8b\x00\x00\x03)\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="literal" node_id="22">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\xb2\x00\x00\x00K\x00\x00\x04\xda\x00\x00\x02\xd7\x00\x00\x00\xb2\x00\x00\x00a\x00\x00\x04\xda\x00\x00\x02\xd7\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', '__version__': 1}</properties>
+		<properties format="pickle" node_id="23">gAN9cQAoWAcAAABfc2NyaXB0cQFYkQEAAGltcG9ydCBwbG90bHkuZmlndXJlX2ZhY3RvcnkgYXMg
+ZmYKZnJvbSBweXNwYXJrLnNxbC5mdW5jdGlvbnMgaW1wb3J0IHVkZgpmcm9tIHB5c3Bhcmsuc3Fs
+LnR5cGVzIGltcG9ydCBTdHJpbmdUeXBlCgpAdWRmKHJldHVyblR5cGU9U3RyaW5nVHlwZSgpKQpk
+ZWYgaW50MnN0cihpKToKICAgIHJldHVybiBzdHIoaSkKCmRmID0gZGYud2l0aENvbHVtbignbGFi
+ZWwnLCBpbnQyc3RyKCdjbGFzcycpKQpkZiA9IGRmLnNlbGVjdCgnbG9jYXRpb25UeXBlJywgJ29y
+ZGluYWxEYXRlJywgJ3RpbWUnLCAnbGFiZWwnKQpmaWd1cmUgPSBmZi5jcmVhdGVfc2NhdHRlcnBs
+b3RtYXRyaXgoZGYudG9QYW5kYXMoKSwgaW5kZXg9J2xhYmVsJywgc2l6ZT0yLCB3aWR0aD04MDAs
+IGhlaWdodD02MDApCgpkYXRhID0gZmlndXJlcQJYDAAAAGF1dG9fZXhlY3V0ZXEDiVgSAAAAY3Vy
+cmVudFNjcmlwdEluZGV4cQRLAFgRAAAAbGlicmFyeUxpc3RTb3VyY2VxBV1xBmN3ZXRhLmd1aS53
+aWRnZXRzLmRhdGEucHlzcGFya19zY3JpcHRfY29uc29sZQpTY3JpcHQKcQcpgXEIfXEJKFgEAAAA
+bmFtZXEKWAoAAABOZXcgc2NyaXB0cQtYBgAAAHNjcmlwdHEMWJEBAABpbXBvcnQgcGxvdGx5LmZp
+Z3VyZV9mYWN0b3J5IGFzIGZmCmZyb20gcHlzcGFyay5zcWwuZnVuY3Rpb25zIGltcG9ydCB1ZGYK
+ZnJvbSBweXNwYXJrLnNxbC50eXBlcyBpbXBvcnQgU3RyaW5nVHlwZQoKQHVkZihyZXR1cm5UeXBl
+PVN0cmluZ1R5cGUoKSkKZGVmIGludDJzdHIoaSk6CiAgICByZXR1cm4gc3RyKGkpCgpkZiA9IGRm
+LndpdGhDb2x1bW4oJ2xhYmVsJywgaW50MnN0cignY2xhc3MnKSkKZGYgPSBkZi5zZWxlY3QoJ2xv
+Y2F0aW9uVHlwZScsICdvcmRpbmFsRGF0ZScsICd0aW1lJywgJ2xhYmVsJykKZmlndXJlID0gZmYu
+Y3JlYXRlX3NjYXR0ZXJwbG90bWF0cml4KGRmLnRvUGFuZGFzKCksIGluZGV4PSdsYWJlbCcsIHNp
+emU9Miwgd2lkdGg9ODAwLCBoZWlnaHQ9NjAwKQoKZGF0YSA9IGZpZ3VyZXENWAUAAABmbGFnc3EO
+SwBYCAAAAGZpbGVuYW1lcQ9OdWJhWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cRBDMgHZ0MsAAgAA
+AAABQAAAABcAAARfAAADJQAAAUAAAAAtAAAEXwAAAyUAAAAAAAAAAAWgcRFYDQAAAHNwbGl0dGVy
+U3RhdGVxElh5AAAAYidceDAwXHgwMFx4MDBceGZmXHgwMFx4MDBceDAwXHgwMVx4MDBceDAwXHgw
+MFx4MDJceDAwXHgwMFx4MDElXHgwMFx4MDBceDAxU1x4MDFceGZmXHhmZlx4ZmZceGZmXHgwMVx4
+MDBceDAwXHgwMFx4MDJceDAwJ3ETWAsAAABfX3ZlcnNpb25fX3EUSwF1Lg==
+</properties>
+		<properties format="pickle" node_id="24">gAN9cQAoWAcAAABfc2NyaXB0cQFYfwIAAGZyb20gcHlzcGFyay5tbGxpYi5ldmFsdWF0aW9uIGlt
+cG9ydCBCaW5hcnlDbGFzc2lmaWNhdGlvbk1ldHJpY3MsIFJhbmtpbmdNZXRyaWNzCmZyb20gcHlz
+cGFyay5zcWwgaW1wb3J0IFJvdwoKc2NvcmVBbmRMYWJlbHMgPSBkZi5yZGQubWFwKGxhbWJkYSBy
+OiBSb3coc2NvcmU9ZmxvYXQoci5wcm9iYWJpbGl0eS52YWx1ZXNbMV0pLCBsYWJlbD1mbG9hdChn
+ZXRhdHRyKHIsJ2NsYXNzJykpKSkKCm1ldHJpY3MgPSBCaW5hcnlDbGFzc2lmaWNhdGlvbk1ldHJp
+Y3Moc2NvcmVBbmRMYWJlbHMpCgojIEFyZWEgdW5kZXIgcHJlY2lzaW9uLXJlY2FsbCBjdXJ2ZQpw
+cmludCgiQXJlYSB1bmRlciBQUiA9ICVzIiAlIG1ldHJpY3MuYXJlYVVuZGVyUFIpCgojIEFyZWEg
+dW5kZXIgUk9DIGN1cnZlCnByaW50KCJBcmVhIHVuZGVyIFJPQyA9ICVzIiAlIG1ldHJpY3MuYXJl
+YVVuZGVyUk9DKQoKIyMgcmFua2luZwpyYW5raW5nX21ldHJpY3MgPSBSYW5raW5nTWV0cmljcyhz
+Y29yZUFuZExhYmVscykKCnByaW50KCJNZWFuIGF2ZXJhZ2UgcHJlY2lzaW9uID0gJXMiICUgcmFu
+a2luZ19tZXRyaWNzLm1lYW5BdmVyYWdlUHJlY2lzaW9uKQoKcHJpbnQoIlRvcCAxMCA9ICVzIiAl
+IHJhbmtpbmdfbWV0cmljcy5wcmVjaXNpb25BdCgxMCkpCgoKCnECWAwAAABhdXRvX2V4ZWN1dGVx
+A4lYEgAAAGN1cnJlbnRTY3JpcHRJbmRleHEESwBYEQAAAGxpYnJhcnlMaXN0U291cmNlcQVdcQZj
+d2V0YS5ndWkud2lkZ2V0cy5kYXRhLnB5c3Bhcmtfc2NyaXB0X2NvbnNvbGUKU2NyaXB0CnEHKYFx
+CH1xCShYBAAAAG5hbWVxClgKAAAATmV3IHNjcmlwdHELWAYAAABzY3JpcHRxDFh/AgAAZnJvbSBw
+eXNwYXJrLm1sbGliLmV2YWx1YXRpb24gaW1wb3J0IEJpbmFyeUNsYXNzaWZpY2F0aW9uTWV0cmlj
+cywgUmFua2luZ01ldHJpY3MKZnJvbSBweXNwYXJrLnNxbCBpbXBvcnQgUm93CgpzY29yZUFuZExh
+YmVscyA9IGRmLnJkZC5tYXAobGFtYmRhIHI6IFJvdyhzY29yZT1mbG9hdChyLnByb2JhYmlsaXR5
+LnZhbHVlc1sxXSksIGxhYmVsPWZsb2F0KGdldGF0dHIociwnY2xhc3MnKSkpKQoKbWV0cmljcyA9
+IEJpbmFyeUNsYXNzaWZpY2F0aW9uTWV0cmljcyhzY29yZUFuZExhYmVscykKCiMgQXJlYSB1bmRl
+ciBwcmVjaXNpb24tcmVjYWxsIGN1cnZlCnByaW50KCJBcmVhIHVuZGVyIFBSID0gJXMiICUgbWV0
+cmljcy5hcmVhVW5kZXJQUikKCiMgQXJlYSB1bmRlciBST0MgY3VydmUKcHJpbnQoIkFyZWEgdW5k
+ZXIgUk9DID0gJXMiICUgbWV0cmljcy5hcmVhVW5kZXJST0MpCgojIyByYW5raW5nCnJhbmtpbmdf
+bWV0cmljcyA9IFJhbmtpbmdNZXRyaWNzKHNjb3JlQW5kTGFiZWxzKQoKcHJpbnQoIk1lYW4gYXZl
+cmFnZSBwcmVjaXNpb24gPSAlcyIgJSByYW5raW5nX21ldHJpY3MubWVhbkF2ZXJhZ2VQcmVjaXNp
+b24pCgpwcmludCgiVG9wIDEwID0gJXMiICUgcmFua2luZ19tZXRyaWNzLnByZWNpc2lvbkF0KDEw
+KSkKCgoKcQ1YBQAAAGZsYWdzcQ5LAFgIAAAAZmlsZW5hbWVxD051YmFYEwAAAHNhdmVkV2lkZ2V0
+R2VvbWV0cnlxEEMyAdnQywACAAAAAAAAAAAAFwAABZ8AAANKAAAAAAAAAC0AAAWfAAADSgAAAAAA
+AAAABaBxEVgNAAAAc3BsaXR0ZXJTdGF0ZXESWHkAAABiJ1x4MDBceDAwXHgwMFx4ZmZceDAwXHgw
+MFx4MDBceDAxXHgwMFx4MDBceDAwXHgwMlx4MDBceDAwXHgwMSVceDAwXHgwMFx4MDFTXHgwMVx4
+ZmZceGZmXHhmZlx4ZmZceDAxXHgwMFx4MDBceDAwXHgwMlx4MDAncRNYCwAAAF9fdmVyc2lvbl9f
+cRRLAXUu
+</properties>
+		<properties format="pickle" node_id="25">gAN9cQAoWAcAAABfc2NyaXB0cQFYJQAAAGRmID0gZGYuc2VsZWN0KCdfaWQnLCAnY29zaW5lVEZJ
+REYyJylxAlgMAAAAYXV0b19leGVjdXRlcQOJWBIAAABjdXJyZW50U2NyaXB0SW5kZXhxBEsAWBEA
+AABsaWJyYXJ5TGlzdFNvdXJjZXEFXXEGY3dldGEuZ3VpLndpZGdldHMuZGF0YS5weXNwYXJrX3Nj
+cmlwdF9jb25zb2xlClNjcmlwdApxBymBcQh9cQkoWAQAAABuYW1lcQpYCgAAAE5ldyBzY3JpcHRx
+C1gGAAAAc2NyaXB0cQxYAAAAAHENWAUAAABmbGFnc3EOSwBYCAAAAGZpbGVuYW1lcQ9OdWJhWBMA
+AABzYXZlZFdpZGdldEdlb21ldHJ5cRBDMgHZ0MsAAgAAAAAAUAAAADwAAANvAAADSgAAAFAAAABS
+AAADbwAAA0oAAAAAAAAAAAWgcRFYDQAAAHNwbGl0dGVyU3RhdGVxElh5AAAAYidceDAwXHgwMFx4
+MDBceGZmXHgwMFx4MDBceDAwXHgwMVx4MDBceDAwXHgwMFx4MDJceDAwXHgwMFx4MDElXHgwMFx4
+MDBceDAxU1x4MDFceGZmXHhmZlx4ZmZceGZmXHgwMVx4MDBceDAwXHgwMFx4MDJceDAwJ3ETWAsA
+AABfX3ZlcnNpb25fX3EUSwF1Lg==
+</properties>
+	</node_properties>
+</scheme>

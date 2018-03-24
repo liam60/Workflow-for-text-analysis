@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="PySpark Script" position="(150, 150)" project_name="weta" qualified_name="weta.gui.widgets.data.pyspark_script_console.OWPySparkScript" title="PySpark Script" version="" />
+		<node id="1" name="Vector Assembler" position="(300, 150)" project_name="weta" qualified_name="weta.gui.widgets.feature.spark_vector_assembler.OWVectorAssembler" title="Vector Assembler" version="" />
+		<node id="2" name="Data Viewer" position="(450, 150)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_viewer.OWDataFrameViewer" title="Data Viewer" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="DataFrame" sink_node_id="1" source_channel="df" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="DataFrame" sink_node_id="2" source_channel="DataFrame" source_node_id="1" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWAcAAABfc2NyaXB0cQFYkAEAAGZyb20gcHlzcGFyay5zcWwgaW1wb3J0IGZ1bmN0aW9u
+cyBhcyBGCmZyb20gcHlzcGFyay5zcWwuZnVuY3Rpb25zIGltcG9ydCB1ZGYsIHN0cnVjdAoKY29s
+dW1ucyA9IFsnaWQnLCAnZG9ncycsICdjYXRzJ10KdmFscyA9IFsKICAgICAoMSwgMiwgMyksCiAg
+ICAgKDIsIDAsIDEpLAogICAgICgzLCAwLCAyKQpdCgpkZiA9IHNxbENvbnRleHQuY3JlYXRlRGF0
+YUZyYW1lKHZhbHMsIGNvbHVtbnMpCmRhdGEgPSBbJ2RvZ3MnLCAnY2F0cyddCgojeCA9IGRmLmdy
+b3VwYnkoJ2RvZ3MnKS5hZ2coRi5jb2xsZWN0X2xpc3Qoc3RydWN0KCpkZi5jb2x1bW5zKSkuYWxp
+YXMoJ3JlcG9ydHMnKSkuY29sbGVjdCgpCgojZGYxID0gc3FsQ29udGV4dC5jcmVhdGVEYXRhRnJh
+bWUoeCwgWydkb2dzJywgJ3JlcG9ydHMnXSlxAlgMAAAAYXV0b19leGVjdXRlcQOJWBIAAABjdXJy
+ZW50U2NyaXB0SW5kZXhxBEsAWBEAAABsaWJyYXJ5TGlzdFNvdXJjZXEFXXEGY3dldGEuZ3VpLndp
+ZGdldHMuZGF0YS5weXNwYXJrX3NjcmlwdF9jb25zb2xlClNjcmlwdApxBymBcQh9cQkoWAQAAABu
+YW1lcQpYCgAAAE5ldyBzY3JpcHRxC1gGAAAAc2NyaXB0cQxYkAEAAGZyb20gcHlzcGFyay5zcWwg
+aW1wb3J0IGZ1bmN0aW9ucyBhcyBGCmZyb20gcHlzcGFyay5zcWwuZnVuY3Rpb25zIGltcG9ydCB1
+ZGYsIHN0cnVjdAoKY29sdW1ucyA9IFsnaWQnLCAnZG9ncycsICdjYXRzJ10KdmFscyA9IFsKICAg
+ICAoMSwgMiwgMyksCiAgICAgKDIsIDAsIDEpLAogICAgICgzLCAwLCAyKQpdCgpkZiA9IHNxbENv
+bnRleHQuY3JlYXRlRGF0YUZyYW1lKHZhbHMsIGNvbHVtbnMpCmRhdGEgPSBbJ2RvZ3MnLCAnY2F0
+cyddCgojeCA9IGRmLmdyb3VwYnkoJ2RvZ3MnKS5hZ2coRi5jb2xsZWN0X2xpc3Qoc3RydWN0KCpk
+Zi5jb2x1bW5zKSkuYWxpYXMoJ3JlcG9ydHMnKSkuY29sbGVjdCgpCgojZGYxID0gc3FsQ29udGV4
+dC5jcmVhdGVEYXRhRnJhbWUoeCwgWydkb2dzJywgJ3JlcG9ydHMnXSlxDVgFAAAAZmxhZ3NxDksA
+WAgAAABmaWxlbmFtZXEPTnViYVgTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEQQzIB2dDLAAIAAAAA
+BRUAAAEwAAAIuAAABD4AAAUVAAABRgAACLgAAAQ+AAAAAAAAAAAKAHERWA0AAABzcGxpdHRlclN0
+YXRlcRJYeQAAAGInXHgwMFx4MDBceDAwXHhmZlx4MDBceDAwXHgwMFx4MDFceDAwXHgwMFx4MDBc
+eDAyXHgwMFx4MDBceDAxJVx4MDBceDAwXHgwMVNceDAxXHhmZlx4ZmZceGZmXHhmZlx4MDFceDAw
+XHgwMFx4MDBceDAyXHgwMCdxE1gLAAAAX192ZXJzaW9uX19xFEsBdS4=
+</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAkAAABpbnB1dENvbHNxAWNjb3B5cmVnCl9yZWNvbnN0cnVjdG9yCnECY2J1aWx0aW5z
+Cmxpc3QKcQNoAymHcQRScQUoSwFLAmVYCQAAAG91dHB1dENvbHEGWAgAAABmZWF0dXJlc3EHWBMA
+AABzYXZlZFdpZGdldEdlb21ldHJ5cQhDMgHZ0MsAAgAAAAAESQAAAbsAAAb2AAAD8QAABEkAAAHR
+AAAG9gAAA/EAAAAAAAAAAAoAcQlYCwAAAF9fdmVyc2lvbl9fcQpLAXUu
+</properties>
+		<properties format="literal" node_id="2">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x04^\x00\x00\x01\xc3\x00\x00\x00\x00\x00\x00\x00-\x00\x00\x04^\x00\x00\x01\xc3\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', '__version__': 1}</properties>
+	</node_properties>
+</scheme>

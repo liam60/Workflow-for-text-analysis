@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;">
+    <g>
+        <path d="M6,6L6,42L42,42L42,6L6,6ZM40,22L40,40L30,40L29,40L19,40L18,40L8,40L8,14L40,14L40,22Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+        <path d="M30,14L29,14L29,22L19,22L19,14L18,14L18,22L8,22L8,14L8,40L8,32L18,32L18,40L19,40L19,32L29,32L29,40L30,40L30,32L40,32L40,31L30,31L30,23L40,23L40,22L30,22L30,14ZM18,31L8,31L8,23L18,23L18,31ZM29,31L19,31L19,23L29,23L29,31Z" style="fill:rgb(102,102,102);fill-rule:nonzero;"/>
+        <rect x="8" y="32" width="10" height="8" style="fill:white;"/>
+        <rect x="8" y="23" width="10" height="8" style="fill:white;"/>
+        <rect x="8" y="14" width="10" height="8" style="fill:white;"/>
+        <rect x="19" y="32" width="10" height="8" style="fill:white;"/>
+        <rect x="19" y="23" width="10" height="8" style="fill:white;"/>
+        <rect x="19" y="14" width="10" height="8" style="fill:white;"/>
+        <g transform="matrix(1.20039,0,0,1.15922,-10.0116,-7.01906)">
+            <path d="M40,32L40,40L40,32Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1.20039,0,0,1.15922,-6.81118,1.09548)">
+            <path d="M40,23L40,31L40,23Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1.5,0,0,2.5,-18,-35.5)">
+            <rect x="30" y="23" width="10" height="8" style="fill:white;"/>
+        </g>
+        <path d="M40,14L40,22L40,14Z" style="fill:white;"/>
+        <rect x="30" y="14" width="10" height="8" style="fill:white;"/>
+    </g>
+    <g transform="matrix(0.0292083,0,0,0.0292181,28.9821,26.2967)">
+        <g>
+            <path d="M280,278C308.073,249.403 323.817,210.891 323.817,170.817C323.817,86.884 254.751,17.817 170.817,17.817C86.884,17.817 17.817,86.884 17.817,170.817C17.817,254.751 86.884,323.817 170.817,323.817C210.891,323.817 249.403,308.073 278,280L448,450M357,333L467,443L441,469L331,359" style="fill:none;stroke:rgb(185,114,70);stroke-width:36px;"/>
+        </g>
+    </g>
+</svg>

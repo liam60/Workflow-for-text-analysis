@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="Word2Vec" position="(323.0, 202.0)" project_name="weta" qualified_name="weta.gui.widgets.feature.spark_word2vec.OWWord2Vec" title="Word2Vec" version="" />
+		<node id="1" name="PySpark Script" position="(108.0, 210.0)" project_name="weta" qualified_name="weta.gui.widgets.data.pyspark_script_console.OWPySparkScript" title="PySpark Script" version="" />
+		<node id="2" name="Data Viewer" position="(442.0, 211.0)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_viewer.OWDataFrameViewer" title="Data Viewer" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="DataFrame" sink_node_id="0" source_channel="df" source_node_id="1" />
+		<link enabled="true" id="1" sink_channel="DataFrame" sink_node_id="2" source_channel="DataFrame" source_node_id="0" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'inputCol': 'sentence', 'maxIter': 1, 'maxSentenceLength': 1000, 'minCount': 5, 'numPartitions': 1, 'outputCol': 'vector', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00i\x00\x00\x00W\x00\x00\x04j\x00\x00\x03\xdd\x00\x00\x00i\x00\x00\x00m\x00\x00\x04j\x00\x00\x03\xdd\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', 'seed': None, 'stepSize': 0.025, 'vectorSize': 100, 'windowSize': 5, '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAcAAABfc2NyaXB0cQFYvQEAAGltcG9ydCBweXNwYXJrCgpzZW50ID0gKCJHZW5lcmFs
+bHksIGEgc2Vzc2lvbiBpcyBhbiBpbnRlcmFjdGlvbiBiZXR3ZWVuIHR3byBvciBtb3JlIGVudGl0
+aWVzLiBJbiBjb21wdXRlciBwYXJsYW5jZSwgaXRzIHVzYWdlIGlzIHByb21pbmVudCBpbiB0aGUg
+cmVhbG0gb2YgbmV0d29ya2VkIGNvbXB1dGVycyBvbiB0aGUgaW50ZXJuZXQuIEZpcnN0IHdpdGgg
+VENQIHNlc3Npb24sIHRoZW4gd2l0aCBsb2dpbiBzZXNzaW9uLCBmb2xsb3dlZCBieSBIVFRQIGFu
+ZCB1c2VyIHNlc3Npb24sIHNvIG5vIHN1cnByaXNlIHRoYXQgd2Ugbm93IGhhdmUgU3BhcmtTZXNz
+aW9uLCBpbnRyb2R1Y2VkIGluIEFwYWNoZSBTcGFyayAyLjAuIikuc3BsaXQoIiAiKQpkZiA9IHNx
+bENvbnRleHQuc3BhcmtTZXNzaW9uLmNyZWF0ZURhdGFGcmFtZShbKHNlbnQsKSwgKHNlbnQsKV0s
+IFsic2VudGVuY2UiXSlxAlgMAAAAYXV0b19leGVjdXRlcQOJWBIAAABjdXJyZW50U2NyaXB0SW5k
+ZXhxBEsAWBEAAABsaWJyYXJ5TGlzdFNvdXJjZXEFXXEGY3dldGEuZ3VpLndpZGdldHMuZGF0YS5w
+eXNwYXJrX3NjcmlwdF9jb25zb2xlClNjcmlwdApxBymBcQh9cQkoWAQAAABuYW1lcQpYCgAAAE5l
+dyBzY3JpcHRxC1gGAAAAc2NyaXB0cQxYvQEAAGltcG9ydCBweXNwYXJrCgpzZW50ID0gKCJHZW5l
+cmFsbHksIGEgc2Vzc2lvbiBpcyBhbiBpbnRlcmFjdGlvbiBiZXR3ZWVuIHR3byBvciBtb3JlIGVu
+dGl0aWVzLiBJbiBjb21wdXRlciBwYXJsYW5jZSwgaXRzIHVzYWdlIGlzIHByb21pbmVudCBpbiB0
+aGUgcmVhbG0gb2YgbmV0d29ya2VkIGNvbXB1dGVycyBvbiB0aGUgaW50ZXJuZXQuIEZpcnN0IHdp
+dGggVENQIHNlc3Npb24sIHRoZW4gd2l0aCBsb2dpbiBzZXNzaW9uLCBmb2xsb3dlZCBieSBIVFRQ
+IGFuZCB1c2VyIHNlc3Npb24sIHNvIG5vIHN1cnByaXNlIHRoYXQgd2Ugbm93IGhhdmUgU3BhcmtT
+ZXNzaW9uLCBpbnRyb2R1Y2VkIGluIEFwYWNoZSBTcGFyayAyLjAuIikuc3BsaXQoIiAiKQpkZiA9
+IHNxbENvbnRleHQuc3BhcmtTZXNzaW9uLmNyZWF0ZURhdGFGcmFtZShbKHNlbnQsKSwgKHNlbnQs
+KV0sIFsic2VudGVuY2UiXSlxDVgFAAAAZmxhZ3NxDksAWAgAAABmaWxlbmFtZXEPTnViYVgTAAAA
+c2F2ZWRXaWRnZXRHZW9tZXRyeXEQQzIB2dDLAAIAAAAAA90AAAEtAAAHgAAABDsAAAPdAAABQwAA
+B4AAAAQ7AAAAAAAAAAAKAHERWA0AAABzcGxpdHRlclN0YXRlcRJYeQAAAGInXHgwMFx4MDBceDAw
+XHhmZlx4MDBceDAwXHgwMFx4MDFceDAwXHgwMFx4MDBceDAyXHgwMFx4MDBceDAxJVx4MDBceDAw
+XHgwMVNceDAxXHhmZlx4ZmZceGZmXHhmZlx4MDFceDAwXHgwMFx4MDBceDAyXHgwMCdxE1gLAAAA
+X192ZXJzaW9uX19xFEsBdS4=
+</properties>
+		<properties format="literal" node_id="2">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x04^\x00\x00\x01\xc3\x00\x00\x00\x00\x00\x00\x00-\x00\x00\x04^\x00\x00\x01\xc3\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', '__version__': 1}</properties>
+	</node_properties>
+</scheme>

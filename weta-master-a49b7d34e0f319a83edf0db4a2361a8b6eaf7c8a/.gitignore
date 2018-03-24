@@ -1,0 +1,14 @@
+.idea
+.DS_Store
+weta.egg-info
+MANIFEST.in
+__pycache__
+metastore_db
+weta/gui/widgets/ml/**/*
+weta/gui/widgets/spark_ml_*
+weta/gui/widgets/icons/*
+weta/metastore_db
+weta/spark-warehouse
+.vscode
+extras/nltk_data/
+extras/stanford-parser/stanford-parser-3.8.0-models.jar

@@ -1,0 +1,12 @@
+package:
+  name: weta
+  version: 0.0.1
+
+build:
+  number: 1
+
+requirements:
+  run:
+    - python
+about:
+  summary: A visual workflow working with Spark ML

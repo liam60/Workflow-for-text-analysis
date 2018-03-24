@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="groupby_example" version="2.0">
+	<nodes>
+		<node id="0" name="PySpark Script" position="(150, 150)" project_name="weta" qualified_name="weta.gui.widgets.data.pyspark_script_console.OWPySparkScript" title="PySpark Script" version="" />
+		<node id="1" name="Column Group" position="(300.0, 149.0)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_group.OWDataFrameGroup" title="Column Group" version="" />
+		<node id="2" name="Data Viewer" position="(450.0, 148.0)" project_name="weta" qualified_name="weta.gui.widgets.data.dataframe_viewer.OWDataFrameViewer" title="Data Viewer" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="DataFrame" sink_node_id="1" source_channel="df" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="DataFrame" sink_node_id="2" source_channel="DataFrame" source_node_id="1" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWAcAAABfc2NyaXB0cQFYeAEAAGZyb20gcHlzcGFyay5zcWwgaW1wb3J0IGZ1bmN0aW9u
+cyBhcyBGCmZyb20gcHlzcGFyay5zcWwuZnVuY3Rpb25zIGltcG9ydCB1ZGYsIHN0cnVjdAoKY29s
+dW1ucyA9IFsnaWQnLCAnZG9ncycsICdjYXRzJ10KdmFscyA9IFsKICAgICAoMSwgMiwgMyksCiAg
+ICAgKDIsIDAsIDEpLAogICAgICgzLCAwLCAyKQpdCgpkZiA9IHNxbENvbnRleHQuY3JlYXRlRGF0
+YUZyYW1lKHZhbHMsIGNvbHVtbnMpCgojeCA9IGRmLmdyb3VwYnkoJ2RvZ3MnKS5hZ2coRi5jb2xs
+ZWN0X2xpc3Qoc3RydWN0KCpkZi5jb2x1bW5zKSkuYWxpYXMoJ3JlcG9ydHMnKSkuY29sbGVjdCgp
+CgojZGYxID0gc3FsQ29udGV4dC5jcmVhdGVEYXRhRnJhbWUoeCwgWydkb2dzJywgJ3JlcG9ydHMn
+XSlxAlgMAAAAYXV0b19leGVjdXRlcQOJWBIAAABjdXJyZW50U2NyaXB0SW5kZXhxBEsAWBEAAABs
+aWJyYXJ5TGlzdFNvdXJjZXEFXXEGY3dldGEuZ3VpLndpZGdldHMuZGF0YS5weXNwYXJrX3Njcmlw
+dF9jb25zb2xlClNjcmlwdApxBymBcQh9cQkoWAQAAABuYW1lcQpYCgAAAE5ldyBzY3JpcHRxC1gG
+AAAAc2NyaXB0cQxYeAEAAGZyb20gcHlzcGFyay5zcWwgaW1wb3J0IGZ1bmN0aW9ucyBhcyBGCmZy
+b20gcHlzcGFyay5zcWwuZnVuY3Rpb25zIGltcG9ydCB1ZGYsIHN0cnVjdAoKY29sdW1ucyA9IFsn
+aWQnLCAnZG9ncycsICdjYXRzJ10KdmFscyA9IFsKICAgICAoMSwgMiwgMyksCiAgICAgKDIsIDAs
+IDEpLAogICAgICgzLCAwLCAyKQpdCgpkZiA9IHNxbENvbnRleHQuY3JlYXRlRGF0YUZyYW1lKHZh
+bHMsIGNvbHVtbnMpCgojeCA9IGRmLmdyb3VwYnkoJ2RvZ3MnKS5hZ2coRi5jb2xsZWN0X2xpc3Qo
+c3RydWN0KCpkZi5jb2x1bW5zKSkuYWxpYXMoJ3JlcG9ydHMnKSkuY29sbGVjdCgpCgojZGYxID0g
+c3FsQ29udGV4dC5jcmVhdGVEYXRhRnJhbWUoeCwgWydkb2dzJywgJ3JlcG9ydHMnXSlxDVgFAAAA
+ZmxhZ3NxDksAWAgAAABmaWxlbmFtZXEPTnViYVgTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEQQzIB
+2dDLAAIAAAAABRYAAAEwAAAIuQAABD4AAAUWAAABRgAACLkAAAQ+AAAAAAAAAAAKAHERWA0AAABz
+cGxpdHRlclN0YXRlcRJYeQAAAGInXHgwMFx4MDBceDAwXHhmZlx4MDBceDAwXHgwMFx4MDFceDAw
+XHgwMFx4MDBceDAyXHgwMFx4MDBceDAxJVx4MDBceDAwXHgwMVNceDAxXHhmZlx4ZmZceGZmXHhm
+Zlx4MDFceDAwXHgwMFx4MDBceDAyXHgwMCdxE1gLAAAAX192ZXJzaW9uX19xFEsBdS4=
+</properties>
+		<properties format="literal" node_id="1">{'groupCol': 'id', 'outputCol': 'list', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x04m\x00\x00\x01\x87\x00\x00\x07\x19\x00\x00\x03\xff\x00\x00\x04m\x00\x00\x01\x9d\x00\x00\x07\x19\x00\x00\x03\xff\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x04^\x00\x00\x01\xc3\x00\x00\x00\x00\x00\x00\x00-\x00\x00\x04^\x00\x00\x01\xc3\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', '__version__': 1}</properties>
+	</node_properties>
+</scheme>
